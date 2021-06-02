@@ -1,0 +1,127 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    input,
+    .ant-select-selector {
+        margin-top: 5px;
+        border: 2px solid #97b397;
+        height: 40px;
+    }
+    .ant-select-selector {
+        border: 2px solid #97b397 !important;
+        height: 40px !important;
+        display: flex;
+        align-items: center;
+    }
+    form {
+        width: 50%;
+        padding: 20px;
+        background-color: #fff8f8;
+    }
+    label {
+        font-weight: 600;
+    }
+}
+
+.fieldFlex {
+    display: flex;
+    margin-bottom: 15px;
+    > div {
+        width: 50%;
+    }
+}
+
+.residentSelect {
+    width: 50%;
+    padding-right: 10px;
+}
+
+.field_mr {
+    margin-right: 20px;
+}
+
+.infoContainer {
+    :first-child {
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    div {
+        padding-bottom: 15px;
+    }
+}
+
+.checkboxContainer {
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+    .checkboxFlex {
+        display: flex;
+        > div {
+            width: 50%;
+        }
+
+        >div:nth-child(2){
+            margin-left: 20px;
+        }
+    }
+    .ant-checkbox-inner {
+        width: 25px;
+        height: 25px;
+        border:2px solid #97b397;
+    }
+    .ant-checkbox-inner::after {
+        width: 8.714286px;
+        height: 18.142857px;
+        top: 9px;
+    }
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #740b82;
+        border-color: #63006f !important;
+    }
+}
+
+.btnContainer {
+    margin-top: 60px;
+    .submitbtn {
+        background-color: #740b82;
+        color: white;
+        border-radius: 20px;
+        border-color: #740583;
+        width: 20%;
+        font-weight: bold;
+        height: 38px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+        margin-right: 30px;
+    }
+    .submitbtn.ant-btn:hover,
+    .submitbtn.ant-btn:focus {
+        background-color: #4d0a56;
+        color: white;
+        border-color: #740583;
+    }
+
+    .resetbtn {
+        border-radius: 20px;
+        width: 20%;
+        font-weight: bold;
+        height: 38px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
+    }
+    .resetbtn.ant-btn:hover,
+    .resetbtn.ant-btn:focus {
+        color: black;
+        border-color: #fff;
+    }
+}
+
+.errmsgCheckbox{
+    color: #ff4d4f;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .formContainer form {
+      width: 100%;
+    }
+  }
